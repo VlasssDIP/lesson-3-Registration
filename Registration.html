@@ -4,25 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <div
-      class="container"
-      style="
-        width: 500px;
-        height: 656px;
-        border: 1px solid black;
-        margin: 0 auto;
-      "
-    >
-      <form action="#" method="POST" name="form" style="margin: 0 auto">
-        <div style="width: 300px; margin: 0 auto">
-          <h3 style="text-align: center">
-            Login | <span style="color: #f10707">Register</span>
-          </h3>
-          <p style="margin-bottom: 0">
+    <div class="container">
+      <h3>
+        Login | <span>Register</span>
+      </h3>
+      <form action="#" method="POST" name="form">
+        <div class="form__wd">
+          
+          <p>
             Enter your email and password to register.
           </p>
           <input type="text" id="name" name="name" placeholder="Username" />
@@ -30,93 +23,38 @@
             type="email"
             id="email"
             name="email"
-            placeholder="Enter your email address" required
+            placeholder="Enter your email address"
+            required
           />
           <input
             type="password"
             id="password"
             name="password"
-            placeholder="Password" required
+            placeholder="Password"
+            required
           />
           <input
             type="password"
             id="password_repeat"
             name="password_repeat"
             placeholder="Confirm Password"
-            style="
-              background-image: url('images/Hide.svg');
-              background-repeat: no-repeat;
-              background-position: 272px;
-            " required
+            required
           />
-          <button
-            type="submit"
-            style="
-              background-color: #46a358;
-              font-weight: 700;
-              width: 100%;
-              font-size: 16px;
-              margin-top: 41px;
-              height: 40px;
-              color: white;
-              border-radius: 5px;
-              border: none;
-            "
-          >
-            Register
-          </button>
+          <button class="register_btn btn__all" type="submit">Register</button>
           <fieldset>
             <legend>Or register with</legend>
           </fieldset>
 
-          <button
-            type="submit"
-            style="
-              background-color: white;
-              background-image: url('images/google\ 1.svg');
-              background-repeat: no-repeat;
-              background-position: 54px;
-              font-weight: 700;
-              width: 100%;
-              font-size: 16px;
-              margin-top: 41px;
-              height: 40px;
-              color: #727272;
-              border-radius: 5px;
-              border: 1px solid #eaeaea;
-              font-size: 13px;
-              font-weight: 500;
-            "
-          >
+          <button type="submit" class="google_btn btn__all">
             Continue with Google
           </button>
 
-          <button
-            type="submit"
-            style="
-              background-color: white;
-              background-image: url('images/facebook\ 1.svg');
-              background-repeat: no-repeat;
-              background-position: 54px;
-              font-weight: 700;
-              width: 100%;
-              font-size: 16px;
-              margin-top: 41px;
-              height: 40px;
-              color: #727272;
-              border-radius: 5px;
-              border: 1px solid #eaeaea;
-              font-size: 13px;
-              font-weight: 500;
-            "
-          >
+          <button type="submit" class="fb_btn btn__all">
             Continue with Facebook
           </button>
         </div>
       </form>
-      <div
-        style="height: 10px; background-color: #46a358; margin-top: 30px"
-      ></div>
+      <div class="green__foot"></div>
     </div>
   </body>
 </html>
